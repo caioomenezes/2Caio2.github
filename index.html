@@ -1,296 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt_br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Asa Branca- Preços </title>
-        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="AsaCss.css">
-        <div id="asa">
-          <img class="folhas" src="asa.png" alt="IconeEntrada">
-          <h1>Asa Branca</h1>
-        </div>
-    </head>
-    <body>
-      <form>
-        <fieldset>
-         <legend>
-           <h1> Consulte o preço </h1>
-         </legend>
-         <label for="vasos"> Selecione o código do vaso: </label>
-         <select id="vasos">
-          <option value="">--escolha--</option>
-          <option value="001">001</option>
-          <option value="002">002</option>
-          <option value="003">003</option>
-          <option value="004">004</option>
-          <option value="005">005</option>
-          <option value="006">006</option>
-          <option value="007">007</option>
-          <option value="008">008</option>
-          <option value="009">009</option>
-          <option value="010">010</option>
-          <option value="011">011</option>
-          <option value="012">012</option>
-          <option value="013">013</option>
-          <option value="014">014</option>
-          <option value="015">015</option>
-          <option value="016">016</option>
-          <option value="017">017</option>
-          <option value="018">018</option>
-          <option value="019">019</option>
-          <option value="020">020</option>
-          <option value="021">021</option>
-          <option value="022">022</option>
-          <option value="023">023</option>
-          <option value="024">024</option>
-          <option value="025">025</option>
-          <option value="026">026</option>
-          <option value="027">027</option>
-          <option value="028">028</option>
-          <option value="029">029</option>
-          <option value="030">030</option>
-          <option value="031">031</option>
-          <option value="032">032</option>
-          <option value="033">033</option>
-          <option value="034">034</option>
-          <option value="035">035</option>
-          <option value="036">036</option>
-          <option value="037">037</option>
-          <option value="038">038</option>
-          <option value="039">039</option>
-          <option value="040">040</option>
-          <option value="041">041</option>
-          <option value="042">042</option>
-          <option value="043">043</option>
-          <option value="044">044</option>
-          <option value="045">045</option>
-          <option value="046">046</option>
-          <option value="047">047</option>
-          <option value="048">048</option>
-          <option value="049">049</option>
-          <option value="050">050</option>
-          <option value="051">051</option>
-          <option value="052">052</option>
-          <option value="053">053</option>
-          <option value="054">054</option>
-          <option value="055">055</option>
-          <option value="056">056</option>
-          <option value="057">057</option>
-          <option value="058">058</option>
-          <option value="059">059</option>
-          <option value="060">060</option>
-          <option value="061">061</option>
-          <option value="062">062</option>
-          <option value="063">063</option>
-          <option value="064">064</option>
-          <option value="065">065</option>
-          <option value="066">066</option>
-          <option value="067">067</option>
-          <option value="068">068</option>
-          <option value="069">069</option>
-          <option value="070">070</option>
-          <option value="071">071</option>
-          <option value="072">072</option>
-          <option value="073">073</option>
-          <option value="074">074</option>
-          <option value="075">075</option>
-          <option value="076">076</option>
-          <option value="077">077</option>
-          <option value="078">078</option>
-          <option value="079">079</option>
-          <option value="080">080</option>
-          <option value="081">081</option>
-          <option value="082">082</option>
-          <option value="083">083</option>
-          <option value="084">084</option>
-
-         </select>
-
-         <p></p>
-         <script>
-             var select = document.querySelector('select');
-             var para = document.querySelector('p');
-
-             select.addEventListener('change', vasos);
-             function vasos() {
-              var choice = select.value;
-
-              if (choice==='001'){
-                para.textContent= ("1- R$ 6,50   ----e-----   2- R$ 8,00");
-              }else if (choice === '002') {
-                para.textContent= ("1- R$ 6,50   ----e-----   2- R$ 8,00");
-              }else if (choice === '003') {
-                para.textContent = ("1- R$ 6,00   ----e-----   2- R$ 8,00 ----e-----   3- R$ 11,00");
-              }else if (choice === '004') {
-                para.textContent = ("1- R$ 6,00   ----e-----   2- R$ 7,00 ----e-----   3- R$ 8,00");
-              }else if (choice === '005') {
-                para.textContent = (" R$ 5,00 ");
-              }else if (choice === '006') {
-                para.textContent = (" R$ 5,00");
-              }else if (choice === '007') {
-                para.textContent = ("0- R$ 2,30   ----e-----   1- R$ 3,60");
-              }else if (choice === '008') {
-                para.textContent = ("0- R$ 2,80   ----e-----   1- R$ 3,80");
-              }else if (choice === '009') {
-                para.textContent = (" R$ 4,00 ");
-              }else if (choice === '010') {
-                para.textContent = ("0- R$ 4,00   ----e-----   1- R$ 6,50 ----e-----   2- R$ 8,00");
-              }else if (choice === '011') {
-                para.textContent = ("0- R$ 2,80   ----e-----   1- R$ 3,80");
-              }else if (choice === '012') {
-                para.textContent = ("0- R$ 3,50   ----e-----   1- R$ 5,00  ----e-----   2- R$ 6,50  ----e-----   3- R$ 9,00");
-              }else if (choice === '013') {
-                para.textContent = (" R$ 5,50");
-              }else if (choice === '014') {
-                para.textContent = ("0- R$ 8,00   ----e-----   1- R$ 12,00  ----e-----   2- R$ 16,00  ----e-----   3- R$ 20,00");
-              }else if (choice === '015') {
-                para.textContent = ("1- R$ 15,00   ----e-----   2- R$ 20,00");
-              }else if (choice === '016') {
-                para.textContent = ("1- R$ 6,00   ----e-----   2- R$ 8,00");
-              }else if (choice === '017') {
-                para.textContent = (" R$ 8,00");
-              }else if (choice === '018') {
-                para.textContent = (" R$ 8,00");
-              }else if (choice === '019') {
-                para.textContent = (" R$ 8,00");
-              }else if (choice === '020') {
-                para.textContent = (" R$ 8,00");
-              }else if (choice === '021') {
-                para.textContent = (" R$ 8,00");
-              }else if (choice === '022') {
-                para.textContent = ("16- R$ 6,00   ----e-----   20- R$ 8,00  ----e-----   24- R$ 11,00");
-              }else if (choice === '023') {
-                para.textContent = ("16- R$ 6,00   ----e-----   20- R$ 8,00  ----e-----   24- R$ 11,00");
-              }else if (choice === '024') {
-                para.textContent = (" R$ 8,00 ");
-              }else if (choice === '025') {
-                para.textContent = ("0- R$ 3,80   ----e-----   1- R$ 5,00 ----e----- 2- R$ 6,00  ----e-----   3- R$ 7,00");
-              }else if (choice === '026') {
-                para.textContent = ("1- R$ 6,50   ----e-----   2- R$ 8,50");
-              }else if (choice === '027') {
-                para.textContent = ("1- R$ 5,00   ----e-----   2- R$ 6,00  ----e-----   3- R$ 7,00");
-              }else if (choice === '028') {
-                para.textContent = ("1- R$ 5,00   ----e-----   2- R$ 6,00  ----e-----   3- R$ 7,00");
-              }else if (choice === '029') {
-                para.textContent = ("1- R$ 5,00   ----e-----   2- R$ 6,00  ----e-----   3- R$ 7,00");
-              }else if (choice === '030') {
-                para.textContent = ("R$ 7,50");
-              }else if (choice === '031') {
-                para.textContent = (" R$ 1,50");
-              }else if (choice === '032') {
-                para.textContent = ("0- R$ 6,00   ----e-----   1- R$ 10,00  ----e-----   2- R$ 13,00  ----e-----   3- R$ 16,00");
-              }else if (choice === '033') {
-                para.textContent = ("R$ 12,00 ");
-              }else if (choice === '034') {
-                para.textContent = ("0- R$ 5,50   ----e-----   1- R$ 9,00  ----e-----   2- R$ 14,00");
-              }else if (choice === '035') {
-                para.textContent = ("0- R$ 5,50   ----e-----   1- R$ 10,00  ----e-----   2- R$ 14,00  ----e-----   3- R$ 25,00");
-              }else if (choice === '036') {
-                para.textContent = ("R$ 20,00 ");
-              }else if (choice === '037') {
-                para.textContent = (" R$ 20,00");
-              }else if (choice === '038') {
-                para.textContent = ("1- R$ 15,00   ----e-----   2- R$ 19,00  ----e-----   3- R$ 22,00");
-              }else if (choice === '039') {
-                para.textContent = (" R$ 20,00");
-              }else if (choice === '040') {
-                para.textContent = (" R$ 22,00");
-              }else if (choice === '041') {
-                para.textContent = (" R$ 21,00 ");
-              }else if (choice === '042') {
-                para.textContent = (" R$ 20,00 ");
-              }else if (choice === '043') {
-                para.textContent = (" R$ 20,00");
-              }else if (choice === '044') {
-                para.textContent = (" R$ 20,00");
-              }else if (choice === '045') {
-                para.textContent = (" R$ 20,00");
-              }else if (choice === '046') {
-                para.textContent = (" R$ 24,00");
-              }else if (choice === '047') {
-                para.textContent = (" R$ 27,00");
-              }else if (choice === '048') {
-                para.textContent = ("1- R$ 12,00   ----e-----   2- R$ 15,00  ----e-----   3- R$ 19,00");
-              }else if (choice === '049') {
-                para.textContent = ("1- R$ 11,00   ----e-----   2- R$ 15,00");
-              }else if (choice === '050') {
-                para.textContent = ("R$ 15,00");
-              }else if (choice === '051') {
-                para.textContent = (" R$ 15,00");
-              }else if (choice === '052') {
-                para.textContent = (" R$ 15,00 ");
-              }else if (choice === '053') {
-                para.textContent = (" R$ 15,00 ");
-              }else if (choice === '054') {
-                para.textContent = (" R$ 15,00");
-              }else if (choice === '055') {
-                para.textContent = (" R$ 15,00");
-              }else if (choice === '056') {
-                para.textContent = (" R$ 65,00");
-              }else if (choice === '057') {
-                para.textContent = (" 1-R$ 50,00   ----e-----   2- R$ 65,00");
-              }else if (choice === '058') {
-                para.textContent = ("1- R$ 50,00   ----e-----   2- R$ 65,00");
-              }else if (choice === '059') {
-                para.textContent = (" R$ 50,00");
-              }else if (choice === '060') {
-                para.textContent = (" R$ 55,00");
-              }else if (choice === '061') {
-                para.textContent = (" R$ 55,00");
-              }else if (choice === '062') {
-                para.textContent = (" R$ 65,00");
-              }else if (choice === '063') {
-                para.textContent = (" R$ 55,00");
-              }else if (choice === '064') {
-                para.textContent = (" R$ 55,00");
-              }else if (choice === '065') {
-                para.textContent = ("1- R$ 80,00   ----e-----   2- R$ 90,00");
-              }else if (choice === '066') {
-                para.textContent = ("1- R$ 80,00   ----e-----   2- R$ 90,00");
-              }else if (choice === '067') {
-                para.textContent = (" R$ 30,00");
-              }else if (choice === '068') {
-                para.textContent = (" R$ 13,00 ");
-              }else if (choice === '069') {
-                para.textContent = (" R$ 35,00");
-              }else if (choice === '070') {
-                para.textContent = ("1- R$ 35,00   ----e-----   2- R$ 40,00");
-              }else if (choice === '071') {
-                para.textContent = (" R$ 35,00");
-              }else if (choice === '072') {
-                para.textContent = (" R$ 20,00 ");
-              }else if (choice === '073') {
-                para.textContent = (" R$ 40,00");
-              }else if (choice === '074') {
-                para.textContent = (" R$ 45,00");
-              }else if (choice === '075') {
-                para.textContent = ("1- R$ 14,00   ----e-----   2- R$ 18,00  ----e-----   3- R$ 22,00");
-              }else if (choice === '076') {
-                para.textContent = (" R$ 20,00 ");
-              }else if (choice === '077') {
-                para.textContent = ("1- R$ 70,00   ----e-----   2- R$ 90,00  ----e-----   3- R$ 110,00");
-              }else if (choice === '078') {
-                para.textContent = ("1- R$ 70,00   ----e-----   2- R$ 90,00  ----e-----   3- R$ 110,00");
-              }else if (choice === '079') {
-                para.textContent = ("1- R$ 60,00   ----e-----   2- R$ 110,00");
-              }else if (choice === '080') {
-                para.textContent = ("1- R$ 60,00   ----e-----   2- R$ 110,00");
-              }else if (choice === '081') {
-                para.textContent = ("1- R$ 80,00   ----e-----   2- R$ 140,00"); 
-              }else if (choice === '082') {
-                para.textContent = ("1- R$ 90,00   ----e-----   2- R$ 130,00"); 
-              }else if (choice === '083') {
-                para.textContent = (" R$ 90,00");  
-              }else if (choice === '084') {
-                para.textContent = (" R$ 180,00");
-              } 
-             }
-         </script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VASOS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">~
+    <link href="https://fonts.googleapis.com/css2?family=Carattere&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="vasos.css">
+</head>
+<body>
+  <div id="cabecario">
+    <h1>------------- Asa Branca -------------</h1>
+    <fieldset>
+      <a href="https://www.instagram.com/vasosasa_branca/">
+          <img class="icones" src="imagens/IconePesquisa-CINZA.png" alt="Icone pesquisa">
+          <link rel="stylesheet" href="vasos .css">
+      </a>
+      <p>Nos siga nas redes</p>
+    </fieldset>
+  </div>
+       <fieldset>
+        <h2>Consulte informações: Clique nos vasos</h2>
+          <div id="bolas">
+              <div id="sorria">
+                <fieldset>
+                  <a href="vasos barro.html">
+                  <img id="sorria" src="/imagens/bar.png" alt="sorria">
+                  </a>
+                </fieldset>
+                <p>vasos de barro</p>
+              </div>
+              <div id="cimento">
+                <fieldset>
+                  <a href="vasos cimento.html">
+                    <img id="sorria" src="/imagens/cim.png" alt="sorria">
+                  </a>
+                  <p>vasos cimento</p>
+                </fieldset>
+              </div>
+          </div>
         </fieldset>
-      </form>
-    </body> 
-    <div id="folhas">
-    <img class="folhas" src="vasos.png" alt="IconeEntrada" width="100px" height="100px">
-    </div>
+        <footer>
+          <h3>Endereço: Avenida antonio candido rocha 103</h3>
+          <botton>
+            <a href="tel:(31)98811-3649">toque para ligar</a>
+          </botton>
+        </footer>
+</body>
+</html>
